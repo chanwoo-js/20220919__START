@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+    width: 1000px;
+    background-color:aqua;
+}
+
+header {
+    width: 1000px;
+    height: 100px;
+    background-color: antiquewhite;
+}
+.top{
+    height: 100px;
+}
+.logo {
+    width: 250px;
+    height: 100px;
+    background-color: gold;
+    float: left;
+}
+.menu {
+    width: 600px;
+    height: 100px;
+    background-color: brown;
+    float: right;
+}
+.navi {
+    width: 600px;
+    height: 40px;
+    margin: 0;
+    margin-top: 60px;
+    padding: 0;
+}
+.navi>li {
+    width: 150px;
+    height: 40px;
+    background-color: blue;
+    float: left;
+    list-style: none;
+}
+.navi>li>a{
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    color: #fff;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    text-align: center;
+}
+.navi>li>a:hover{
+    color: cornflowerblue;
+}
+.bodywrap{
+    width: 1000px;
+    height: 500px;
+    background-color: coral;
+}
+.imgslide {
+    width: 1000px;
+    height: 300px;
+    background-color: antiquewhite;
+}
+.contents{
+    width: 1000px;
+    height: 200px;
+    background-color: aliceblue;
+}
+.notice {
+    width: 390px;
+    height: 180px;
+    background-color: beige;
+    float: left;
+}
+.gallery{
+    width: 390px;
+    height: 180px;
+    background-color: blueviolet;
+    float: left;
+    margin-left: 10px;
+}
+
+.shortcut{
+    width: 200px;
+    height: 180px;
+    background-color: cadetblue;
+    float: right;
+}
+footer{
+    width: 1000px;
+    height: 100px;
+    background-color: blue
+}
