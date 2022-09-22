@@ -98,7 +98,7 @@ header {
     text-align: center;
 }
 
-.submenu a:hover {
+.submenu a:hover{
     color: #fabd43;
     text-decoration: underline;
 }
@@ -226,6 +226,7 @@ header {
     height: 180px;
     width: 200px;
     margin-top: 10px;
+    position: relative;
 }
 
 .shortcut img {
@@ -239,17 +240,18 @@ header {
     height: 30px;
     width: 100px;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     text-align: center;
     color: #ffffff;
     font-weight: bold;
     line-height: 30px;
     background-color: rgba(40, 40, 40, 0.5);
-    margin-top: 80px;
-    margin-left: 50px;
 }
 
 .sctext:hover {
-    opacity: 0.5;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 footer {
@@ -282,9 +284,10 @@ footer {
     font-size: 16px;
     line-height: 50px;
 }
-
+.btmenu li {
+    float: left;
+}
 .btmenu li>a {
-    float: right;
     width: 100px;
     display: inline-block;
     color: #ffffff;
