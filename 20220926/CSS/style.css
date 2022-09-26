@@ -1,0 +1,25 @@
+@charset 'utf-8';
+/* CSS Dcoument */
+body {width: 1000px; height: 650px; background-color: white;}
+
+header {width: 200px; height: 650px; position: absolute;}
+.top {width: 200px; height: 650px; background-color: coral; float: left;}
+.logo {width: 200px; height: 40px; background-color: beige; float: left;}
+.menu {background-color: aqua; position: absolute;}
+
+/* image slide */
+.imgslide {width: 800px; height: 350px; float: right; background-color: cornflowerblue;}
+
+/* contents */
+.contents {width: 800px; height: 200px; float: right; background-color: blue;}
+.notice {width: 300px; height: 200px; float: left; background-color: blueviolet;}
+.gallery {width: 300px; height: 200px; float: left; background-color: burlywood;}
+.shortcut {width: 200px; height: 200px; float: left; background-color: green;}
+
+/* footer */
+.footer {width: 800px; height: 100px; float: right; background-color: chartreuse;}
+.btlogo {width: 200px; height: 100px; float: left; background-color: cadetblue;}
+.copy {width: 400px; height: 100px; float: left; background-color: darkblue;}
+.familysite {width: 200px; height: 100px; float: right; background-color: cornsilk;}
+
+
