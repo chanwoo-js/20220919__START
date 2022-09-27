@@ -1,0 +1,9 @@
+@charset 'utf-8';
+/*CSS Documnet*/
+
+.container {width: 500px; height: 500px; background-color: aqua; position: relative;}
+.box {width: 100px; height: 100px; line-height: 100px; text-align: center; }
+.a {background-color: blue; color: white; position: absolute; left: 50px; top: 50px; z-index: 3;}
+.b {background-color: red; color: white; position: relative; top: 20px; left: 20px; z-index: 2;}
+.c {background-color: yellow; color: white; position: fixed; top: 20px; right: 10px; bottom: 10px; left: 20px;  z-index: 2;}
+

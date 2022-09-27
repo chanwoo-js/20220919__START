@@ -1,0 +1,10 @@
+@charset 'utf-8';
+/* CSS Document */
+*{margin: 0 auto;}
+.container {width: 1000px; height: 1000px; background-color: burlywood;}
+.box {width: 100px; height: 100px; line-height: 100px; text-align: center;}
+.a {background-color: brown; float: left; margin: 10px 0 0 10px;}
+.b {background-color: coral;}
+.c {background-color: darkgreen;}
+.d {background-color: blueviolet;}
+
