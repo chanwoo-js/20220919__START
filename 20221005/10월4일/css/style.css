@@ -1,0 +1,222 @@
+@charset "utf-8";
+*{
+    margin: 0 auto;
+    padding: 0;
+    color: #333;
+    font-family: "맑은 고딕";
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    display: block;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background: #ccc;
+}
+.top{
+    width: 1200px;
+    height: 100px;
+    background: #eee;
+    display: flex;
+}
+
+.logo{
+    width: 250px;
+    height: 100px;
+    margin: 0;
+}
+
+nav.menu{
+    width: 800px;
+    height: 40px;
+    margin-top: 30px;
+    margin-right: 0;
+    border: 1px solid black;
+
+}
+.menu ul {
+    display: flex;
+    text-align: center;
+    line-height: 40px;
+}
+.menu ul li {
+    width: 200px;
+    height: 40px;
+    background-color: #333;
+}
+.menu ul > li > a {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+.menu ul > li >a:hover {
+    background-color: #ccc;
+    color: #444;
+}
+.container{
+    width: 1200px;
+    height: 500px;
+}
+
+.imgslide{
+    width: 100%;
+    height: 300px;
+    background-color: coral;
+    position: relative;
+    overflow: hidden;
+}
+.imgtest {
+    width: 600px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 300px;
+    top:140px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white;
+}
+.con{
+    width: 1200px;
+    height: 200px;
+    display: flex;
+
+}
+.contents{
+    width: 400px;
+    height: 200px;
+}
+.tabmenu {
+    width: 395px;
+    height: 180px;
+    margin: 10px 5px 0 0;
+    display: flex;
+    position: relative;
+}
+.tabmenu > li {
+    width: 100px;
+    margin: 0;
+    line-height: 30px;
+
+}
+.tabmenu > li > a {
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #ddd;
+    background-color: #ccc;
+}
+.notice {
+    width: 400px;
+}
+.notice ul {
+    width: 393px;
+    padding-top: 12px;
+    border: 1px solid #ddd;
+}
+.notice li {
+    height: 32px;
+    line-height: 32px;
+    font-size: 15px;
+    margin: 0 10px 0 10px;
+}
+.notice li:nth-child(2n){
+    background-color: #ccc;
+    font-weight: bold;
+}
+.notice li span {
+    float: right;
+    margin-right: 10px;
+}
+.tabmenu > li div {
+    height: 0;
+    
+}
+.tabmenu > li.active div {
+    width: 393px;
+    height: 148px;
+    border: 1px solid #ddd;
+    position: absolute;
+    left: 0;
+    display: none;
+}
+.gallery img {
+    width: 100px;
+    height: 100px;
+}
+.gallery ul{
+    width: 400px;
+    height: 145px;
+    display: flex;
+    align-items: center;
+}
+.banner{
+    width: 400px;
+    height: 200px;
+    position: relative;
+}
+.banner img, .shortcut img {
+    width: 395px;
+    height: 180px;
+    margin-top: 10px;
+}
+.banner span, .shortcut span {
+    width: 300px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 1.3rem;
+    line-height: 40px;
+    text-align: center;
+
+}
+.shortcut{
+    width: 400px;
+    height: 200px;
+    position: relative;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(0, 174, 255);
+}
+.bottom{
+    width: 1200px;
+    height: 100%;
+    display: flex;
+}
+.btlogo{
+    width: 30%;
+    height: 100%;
+}
+.btlogo img {
+    margin: 10px 0 0 40px;
+}
+.copy{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    line-height: 100px;
+    font-size: 1.2rem;
+}
+.icon{
+    width: 20%;
+    height: 100%;
+}
+.icon > ul {
+    box-sizing: border-box;
+    text-align: center;
+    height: 100%;
+    padding: 20px 0 0 0;
+}
+.icon > ul > li {
+    display: inline-block;
+    margin: 0 10px;
+}
