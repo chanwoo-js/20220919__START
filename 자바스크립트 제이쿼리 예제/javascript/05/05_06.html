@@ -6,7 +6,15 @@
     <title>전역변수</title>
     <body>
 <script>
-
+    var num = 1;
+    function love() {
+        a = "산";
+        var b = "강";
+        document.write("함수내에서 출력 : ",a,"<br>");
+        document.write("함수내에서 출력 : ",b,"<br>");
+    }
+    love()
+    document.write(a,b,"<br>")
 </script>
 </body>
 </html>
