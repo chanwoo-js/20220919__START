@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>사용자 객체1</title>
     <link rel="stylesheet" href="css/box.css">
 </head>
-<body>
-<script>
 
-</script>
+<body>
+    <script>
+
+        const picture = [
+            new Picture('images/pic01.jpg', '에펠탑의 신랑 신부', "마르크 샤갈"),
+            new Picture('images/pic02.jpg', '에펠탑의 신랑 신부', "마르크 샤갈"),
+            new Picture('images/pic03.jpg', '에펠탑의 신랑 신부', "마르크 샤갈"),
+            new Picture('images/pic04.jpg', '에펠탑의 신랑 신부', "마르크 샤갈")
+        ]
+
+        function Picture(image, title, aritst) {
+            this.image = image;
+            this.title = title;
+            this.aritst = aritst;
+            this.art = function () {
+                document.write('<dl><dt>', this.artist, '</dt><dd><img src="'
+                    , this.image, '"></dd><dd>', this.title, '</dd></dl>')
+            }
+        }
+        for (let i = 0; i <= picture.length - 1; i++) {
+            picture[i].art()
+        }
+
+    </script>
 </body>
+
 </html>
