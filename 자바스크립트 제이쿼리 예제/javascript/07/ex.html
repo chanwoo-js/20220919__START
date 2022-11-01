@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Today = new Date();
+        switch (Today.getDay()) {
+            case 0:document.write("일요일입니다")
+                break;
+            case 1:document.write("월요일입니다")
+                break;
+            case 2:document.write("화요일입니다")
+                break;
+            case 3:document.write("수요일입니다")
+                break;
+            case 4:document.write("목요일입니다")
+                break;
+            case 5:document.write("금요일입니다")
+                break;
+            case 6:document.write("토요일입니다")
+                break;
+        }
+        var today = new Date(2021,08,05)
+        document.write(today+'<br>')
+        today.setFullYear(2021);
+        today.setMonth(08);
+        document.write(`오늘은 ${today.getFullYear()}년 ${today.getMonth()}월 입니다`)
+    </script>
+</body>
+</html>
