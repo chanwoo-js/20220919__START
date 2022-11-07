@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div id="container">
+    <img src="images/easys-1.jpg" alt="cover" id="cover">
+</div>
+<script>
+    var cover = document.getElementById("cover");
+    cover.addEventListener("mouseover", changePic, false);
+    cover.addEventListener("mouseout" , originPic, false);
+
+    function changePic() {
+        cover.src = "images/easys-2.jpg"
+    }
+    function originPic() {
+        cover.src = "images/easys-1.jpg"
+    }
+</script>
+</body>
+</html>

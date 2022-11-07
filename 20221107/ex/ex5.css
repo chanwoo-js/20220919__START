@@ -1,0 +1,84 @@
+#container{
+  width: 600px;
+  margin: 0 auto;
+}
+#cup{
+  width: 200px;
+  height: 200px;
+  box-shadow: 1px 1px 2px #eee;
+  outline: 1px dashed #ccc;
+  outline-offset: -7px;
+}
+#small_pic {
+  margin-top: 20px;
+}
+#small_pic img{
+  width: 60px;
+  height: 60px;
+}
+#small_pic img:hover{
+  cursor: pointer;
+}
+#prod_pic, #desc{
+  float: left;
+}
+#prod_pic{
+  margin: 20px 20px auto 10px;
+}
+#desc{
+  width: 300px;
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+.bluetext{
+  color:#4343ff;
+  font-weight: bold;
+}
+#desc ul{
+  list-style: none;
+}
+#desc ul li{
+  font-size: 0.9em;
+  line-height: 1.8em;
+}
+#desc button{
+  margin: 20px 0;
+  width: 100%;
+  padding: 0.5rem;
+}
+hr{
+  clear: both;
+}
+#desc a{
+  text-decoration: none;
+  font-size: 0.9em;
+  color: blue;
+  padding-left: 40px;
+}
+
+#detail{
+  padding-top: 20px;
+  display: none;
+}
+#detail li{
+  font-size: 0.9em;
+  line-height: 1.4rem;
+}
+h1{
+  font-size: 2rem;
+  text-align: center;
+}
+h2{
+  font-size: 1.5rem;
+  color: #ccc;
+  font-weight: normal;
+}
+h3{
+  font-size: 1.1rem;
+  color: #333;
+}
+p{
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  text-align: justify;
+}
