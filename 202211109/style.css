@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+ul, li {
+    list-style: none
+}
+
+.mask {
+    width: 960px;
+    height: 500px;
+    margin: 100px auto;
+    border: 5px solid #000;
+    position: relative
+}
+
+.slide {
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.slide > li {
+    width: 300px;
+    height: 500px;
+    background-color: darkcyan;
+    float: left;
+    margin-right: 30px;
+    text-align: center;
+    line-height: 500px;
+    font-size: 40px;
+    color: red;
+}
+
+.slide > li:last-child {
+    margin-right: 0
+}
+
+.slide.animate {
+    transition: all 0.5s ease-in-out
+}
+
+#prev, #next {
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+#prev {left: 0}
+#next {right: 0}
