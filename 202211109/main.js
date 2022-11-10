@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
         next = document.querySelector("#next"), // 오른쪽 버튼
         currentIndex = 0, // 현재 index value
         slideCount = slideBox.length, // li 의 총 갯수
-        slideWidth = 300,// 사진 하나당 width
+        slideWidth = 300,// 사진 하나당 width`
         slideMargin = 30; // 사진 하나당 마진
 
     console.log(slideBox);
