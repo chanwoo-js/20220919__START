@@ -1,0 +1,46 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;900&display=swap');
+
+*{padding: 0; margin: 0; box-sizing: border-box;list-style: none; color: black; font-family: 'Noto Sans KR', sans-serif;}
+
+a{text-decoration: none;}
+ul {list-style: none}
+#container{width: 1200px; margin: 0 auto}
+header{width: 100%;height: 100px; background-color: #07c}
+
+#logo{float: left; width: 250px; height: 100px; background-color: #00cc00}
+#logo h1 {text-align: center; font-weight: 900; font-size: 40px; color: #fff; text-shadow: 2px -5px 0 #222; line-height: 100px;}
+
+#nav{float: right; width: 900px; height: 100px; background-color: green;padding-top: 40px;}
+#topMenu{height: 60px;}
+#topMenu > li {float: left; position: relative;}
+#topMenu > li:hover > ul {display: block;}
+#topMenu > li > a {display: inline-block; color: #fff; font-weight:bold; padding: 20px 60px;}
+#topMenu > li > a > span {font-size: 0.5em;}
+#topMenu > li > a:hover {color: black}
+#topMenu > li > ul { position: absolute; left: 50%; transform: translate(-50%,0%); width: 160px; background-color: rgba(255,255,255,0.6); display: none;}
+#topMenu > li > ul > li {padding: 10px; text-align: center;}
+#topMenu > li > ul > li > a {font-size: 14px;  display: block; color: #000;}
+#topMenu > li > ul > li > a:hover{color: #f00}
+
+#slideShow {width: 1200px; height: 300px;clear: both; position: relative; overflow: hidden}
+#slides {position: absolute; left: 0; top: 0}
+#slides > img {width: 100%; float: left;}
+#slides button {position: absolute; height: 100%; top: 50%; transform: translateY(-50%);  border: none; padding: 20px; color:#000; font-weight: 800; font-size: 24px; opacity: 0.5; background-color: transparent;}
+#slides button:hover {background-color: #222; color: #fff; opacity: 0.6; cursor: pointer;}
+#prev {left: 0;}
+#next {right: 0;}
+
+#contents{width: 1200px; height: 300px; display: flex;}
+#tabMenu{float: left; width: 600px; height: 100%; background-color: hotpink; margin-top: 10px;}
+#tabMenu input[type="radio"]{display: none;}
+#tabMenu label{display: inline-block; margin: 0; padding: 15px 25px; font-weight:bold; text-align: center; color: #aaa; border: 1px
+solid transparent}
+#tabMenu label:hover {color: #222; cursor: pointer}
+#tabMenu input:checked + label {color: #b00; border: 1px solid #ddd; background-color: #eee}
+.tabContent {padding: 20px 0 0; border-top: 1px solid #ddd;}
+#notice ul {margin-left: 30px;}
+
+
+#links{float: left; width: 600px; height: 100%; background-color: #00ccff}
+footer{width: 1200px; height:100px; background-color: gray;}
