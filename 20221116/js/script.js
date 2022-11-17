@@ -16,19 +16,15 @@ function showSlides(n) {
 }
 
 function prevSlide() {
-    if (current > 0) {
-        return current -= 1;
-    } else {
+    if (current > 0) current -= 1;
+    else
         current = slides.length - 1;
-        showSlides(current);
-    }
+    showSlides(current);
 }
 
 function nextSlide() {
-    if (current < slides.length - 1) {
-        return current += 1;
-    } else {
+    if (current < slides.length - 1) current += 1;
+    else
         current = 0;
-        showSlides(current);
-    }
+    showSlides(current);
 }
