@@ -1,0 +1,4 @@
+#wrap {position: relative;}
+.page {position: relative;}
+.in_page {background-color: khaki; position: absolute; inset: 50%; transform: translate(-50%,-50%)}
+.btn {width: 100px; height: 100px; font-size: 80px; position: absolute; inset: 50%; transform: translate(-50%,-50%); background-color: black; color: white; text-align: center; line-height: 80px;}
