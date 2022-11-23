@@ -1,0 +1,20 @@
+#wrap { position: fixed;}
+section {position: relative;}
+#align > section {float: left;}
+#top_page {background-color: chocolate;}
+#left_page {background-color: chartreuse;}
+#home {background-color: crimson}
+#right_page {background-color: cornflowerblue; }
+#bottom_page {background-color: cyan;}
+.but {width: 200px; height: 200px; background-color: black; color: white; font-size: 50px; line-height: 200px; text-align: center; position: absolute;}
+
+#main_to_left {left: 0; top: 50%; transform: translateY(-50%)}
+#main_to_top {top: 0; left: 50%; transform: translateX(-50%)}
+#main_to_right {right: 0; top: 50%; transform: translateY(-50%)}
+#main_to_bottom {bottom: 0; left: 50%; transform: translateX(-50%)}
+
+#top_to_main {bottom: 0; left: 50%; transform: translateX(-50%)}
+#right_to_main {left: 0; top: 50%; transform: translateY(-50%)}
+#bottom_to_main {top: 0; left: 50%; transform: translateX(-50%)}
+#left_to_main {right: 0; top: 50%; transform: translateY(-50%)}
+

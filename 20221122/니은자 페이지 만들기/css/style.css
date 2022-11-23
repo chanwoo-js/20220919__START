@@ -1,10 +1,10 @@
-#wrap {width: 300%; height: 300vh; position: relative}
+#wrap {position: relative}
 section {width: 33%; height: 100vh; position: relative}
-section:nth-child(1) {background-color: darkcyan}
-section:nth-child(2) {background-color: coral}
-#align section:nth-child(1) {background-color: blue}
-#align section:nth-child(2) {background-color: hotpink}
-#align section:nth-child(3) {background-color: tan}
+/*section:nth-child(1) {background-color: darkcyan}*/
+/*section:nth-child(2) {background-color: coral}*/
+/*#align section:nth-child(1) {background-color: blue}*/
+/*#align section:nth-child(2) {background-color: hotpink}*/
+/*#align section:nth-child(3) {background-color: tan}*/
 #align {width: 100%; height: 100vh;}
 #align > section {float: left;}
 .in_page {width:1000px; height: 500px; background-color: antiquewhite; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%)}

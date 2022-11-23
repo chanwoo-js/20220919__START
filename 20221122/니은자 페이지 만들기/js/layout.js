@@ -1,26 +1,20 @@
 $(document).ready(function () {
     // 1. 윈도우 가로크기 설정
     let window_w = $(window).width();
-    console.log(window_w);
     // 2. 윈도우 세로크기 설정
     let window_h = $(window).height();
-    console.log(window_h);
 
     // 리사이즈를 위한 함수화 작업
     function layout() {
-        // 전체 여백 초기화
-        $("*").css({
-            margin: 0,
-            padding: 0,
-        });
         // wrap 스타일
         $("#wrap").css({
-            width: window_w,
-            height: window_h * 4,
+            width: window_w*3,
+            height: window_h*3,
         });
         // page 스타일
-        let bg = ["lightgreen", "crimson", "gold", "lightcoral"]
-        $(".page").css({
+        let bg = ["yellow", "red", "green", "blue", "pink"];
+
+        $("section").css({
             width: window_w,
             height: window_h,
             // 배열로 4가지 컬러 저장
@@ -28,6 +22,10 @@ $(document).ready(function () {
             backgroundColor: function (i) {
                 return bg[i]
             }
+        })
+        $("#align").css({
+            width : window_w *3,
+            height : window_h
         })
         // in_page 가로, 세로 윈도우 크기 0.8비율
         $(".in_page").css({
