@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../Common/jquery-3.6.0.js"></script>
+    <script>
+        $(function () {
+            // getAttribute
+            // setAttribute
+            // attr() ; => 태그의 속성을 추가, 변경
+            // 1. 단일 속성
+            // $("선택자").attr("단일속성", "속성값");
+            // $("선택자").attr("단일속성", function () {})
+            // 2. 다중 속성 / 함수
+            // $("선택자").attr({
+            //      속성 : 속성값,
+            //      속성 : 속성값,
+            //      .........,
+            // })
+            // 너비500, 높이 500 테두리 10실선 검정색
+            $("#box > img").attr({
+                width : 500,
+                height : 500,
+                border : "10px solid black"
+            })
+            // #box를 클릭하면 removeAttr("속성")으로 border 속성 제거하기
+            // $("#box").click(function () {
+            //     $("#box > img").removeAttr("border")
+            // })
+            // #box 를 클릭하면 img src 속성을 바꾸자
+            // $("#box").click(function () {
+            //     $("#box > img").attr({
+            //         src : "image/2.jpg",
+            //         alt : "에펠탑"
+            //     })
+            // })
+            $("#box").hover(function () {
+                $("#box > img").attr({
+                    src : "image/2.jpg",
+                    alt : "에펠탑"
+                })
+                $("#box > h1").text("사진이 바뀌어요")
+            },function () {
+                $("#box > img").attr({
+                    src : "image/1.jpg",
+                    alt : "계란"
+                })
+                $("#box > h1").text("마우스를 올려주세요")
+            })
+            // 객체 조작 메서드
+            // 1. text() $("선택자").text("문자열")
+            // => 선택한 요소의 텍스트 가져옴
+            // 2. text() $("선택자").text("문자열")
+            // => 선택자의 하위요소를 가져와 문자열로 반환
+            $("#getTag").html(`<h3>html 메서드</h3>`)
+            // => 선택자의 하위요소 전부 제거
+            // => 지정한 새 요소를 생성
+            $("#getText").text(`<h3>text 메서드 타이틀 수정</h3>`)
+            // => 선택자의 하위 요소 전부 제거
+            // => 지정한 텍스트 생성
+            let bg = ["crimson", "purple", "pink", "red", "yellow"];
+            $(".img").css({
+                backgroundColor : function (i){
+                    return bg[i]
+                }
+            })
+            // next 클릭하면
+            // #img_wrap이 .img 의 너비만큼 움직임(-600px)
+            let click = 0;
+
+            $("#down").on("click", function () {
+                click++;
+               if(click >4){
+                   click = 0;
+               }
+               $("#img_wrap").animate({
+                   top : -400*click,
+               },1000)
+                console.log(click)
+            })
+            $("#up").on("click", function () {
+                click--;
+                if(click < 0){
+                    click = 4;
+                }
+                $("#img_wrap").animate({
+                    top : -400*click,
+                },1000)
+                console.log(click)
+            })
+            // 타이머 함수
+            // 강제 이벤트 실행 명령어 => trigger
+            // $("선택자").trigger("이벤트명");
+            setInterval(function () {
+                $("#down").trigger("click")
+            },2000)
+        })
+    </script>
+    <style>
+        *{margin: 0; padding: 0;}
+        #mask {width: 600px; height: 400px; border: 5px solid black; margin: 100px auto; position: relative; overflow: hidden}
+        #img_wrap {width: 600px; height: 2000px; position: absolute; top: 0; left: 0; color: white; }
+        .img {width: 600px; height: 400px;font-size: 50px; font-weight: 900; text-align: center; line-height: 400px;}
+        .btn {width: 80px; height: 80px; background-color: black; color: white; text-align: center; line-height: 80px; font-size: 30px; position: absolute; left: 50%; transform: translateX(-50%);}
+        #up {top: 0;}
+        #down {bottom: 0;}
+    </style>
+</head>
+<body>
+<div id="box">
+    <img src="image/1.jpg" alt="계란">
+    <h1>마우스를 올려주세요</h1>
+</div>
+<div id="getTag">
+    <h3>html 메서드</h3>
+    <span>123456789</span>
+</div>
+<div id="getText">
+    <h3>text 메서드</h3>
+    <span>123456789</span>
+</div>
+<div id="mask">
+    <div id="img_wrap">
+        <div class="img">1</div>
+        <div class="img">2</div>
+        <div class="img">3</div>
+        <div class="img">4</div>
+        <div class="img">5</div>
+    </div>
+
+    <div class="btn" id="down">▼</div>
+    <div class="btn" id="up">▲</div>
+</div>
+</body>
+</html>

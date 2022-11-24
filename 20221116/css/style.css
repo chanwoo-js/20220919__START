@@ -28,8 +28,8 @@ header{width: 100%;height: 100px; background-color: #07c}
 #slides > img {width: 100%; float: left;}
 #slides button {position: absolute; height: 100%; top: 50%; transform: translateY(-50%);  border: none; padding: 20px; color:#000; font-weight: 800; font-size: 24px; opacity: 0.5; background-color: transparent;}
 #slides button:hover {background-color: #222; color: #fff; opacity: 0.6; cursor: pointer;}
-#prev {left: 0;}
-#next {right: 0;}
+#down {left: 0;}
+#up {right: 0;}
 
 #contents{width: 1200px; height: 300px; display: flex;}
 #tabMenu{float: left; width: 600px; height: 100%; margin-top: 10px;}

@@ -1,6 +1,6 @@
 let slides = document.querySelectorAll("#slides > img"); // .length 3
-let prev = document.getElementById("prev");
-let next = document.getElementById("next");
+let prev = document.getElementById("down");
+let next = document.getElementById("up");
 
 var current = 0;
 

@@ -41,31 +41,31 @@
 
  function btn(){
   //버튼 작동
-    $('#next').on('click',function(e){
-      $('#next,#prev').hide();
+    $('#up').on('click',function(e){
+      $('#up,#down').hide();
       $('#source').animate({marginLeft:'-=400px'},300,'swing',function(){
         $('#source>li:first').appendTo('#source');
         $('#source').css('margin-left','-400px');
-        $('#next,#prev').show();
+        $('#up,#down').show();
       });
     });
-    $('#prev').on('click',function(e){
-      $('#next,#prev').hide();
+    $('#down').on('click',function(e){
+      $('#up,#down').hide();
       $('#source').animate({marginLeft:'+=400px'},300,'swing',function(){
         $('#source>li:last').prependTo('#source');
         $('#source').css('margin-left','-400px');
-        $('#next,#prev').show();
+        $('#up,#down').show();
       });
     });
 }
 
 //타이머 소스
 function aniGallery(){
-  $('#next,#prev').hide();
+  $('#up,#down').hide();
   $('#source').animate({marginLeft:'-=400px'},300,'swing',function(){
     $('#source>li:first').appendTo('#source');
     $('#source').css('margin-left','-400px');
-    $('#next,#prev').show();
+    $('#up,#down').show();
   });
 }
     </script>
