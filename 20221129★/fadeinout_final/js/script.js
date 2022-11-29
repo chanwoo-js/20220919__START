@@ -35,4 +35,10 @@ $(function () {
         },2000);
     }
     moveSlide();
+
+    $("#mask").hover(function () {
+        clearInterval(time)
+    }, function () {
+        moveSlide();
+    })
 })
